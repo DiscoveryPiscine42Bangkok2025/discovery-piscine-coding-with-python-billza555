@@ -1,8 +1,9 @@
+#!/usr/bin/env python3
 def array_of_names(dict):
     names = []
     for word in persons:
         names.append(f"{word.capitalize()} {dict[word].capitalize()}")
-    print(names)
+    return names
 persons = {
 "jean": "valjean",
 "grace": "hopper",
