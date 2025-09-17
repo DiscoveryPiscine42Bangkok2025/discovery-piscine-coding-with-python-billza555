@@ -9,6 +9,7 @@ def checkmate(board: str):
             if grid[y][x] == "K":
                 if king_pos is not None:
                     print("Error")
+                    return
                 king_pos = (y, x)
     if king_pos is None:
         print("Error")
