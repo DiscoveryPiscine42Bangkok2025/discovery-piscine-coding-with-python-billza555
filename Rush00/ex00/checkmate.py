@@ -7,8 +7,9 @@ def checkmate(board: str):
     for y in range(size):
         for x in range(len(grid[y])):
             if grid[y][x] == "K":
+                if king_pos is not None:
+                    print("Error")
                 king_pos = (y, x)
-                break
     if king_pos is None:
         print("Error")
         return
